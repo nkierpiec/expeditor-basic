@@ -1,10 +1,6 @@
 base_config:
   file: .expeditor/base_config.yml
 
-release_branches:
-  - master
-
-
 pipelines:
   - verify
 
