@@ -8,5 +8,8 @@ slack:
 subscriptions:
   - workload: pull_request_merged:{{github_repo}}:{{release_branch}}:*
     actions:
-      - built_in:bump_version
-    pull_request: true
+      - bash:.expeditor/noop.sh
+    pull_request: 
+      title: Title goes here!
+      description: Description block!
+      branch: my-cool-branch
