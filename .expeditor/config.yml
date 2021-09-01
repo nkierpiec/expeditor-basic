@@ -11,5 +11,5 @@ subscriptions:
       - bash:.expeditor/noop.sh
     pull_request: 
       title: "{{title}}"
-      description: .expeditor/oops.mustache
+      description: .expeditor/template.mustache
       branch: my-cool-branch
