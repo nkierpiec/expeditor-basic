@@ -10,6 +10,7 @@ subscriptions:
   - workload: pull_request_merged:{{github_repo}}:{{release_branch}}:*
     actions:
       - bash:.expeditor/noop.sh
+    delay: 15s
     pull_request: 
       title: "{{title}}"
       description: .expeditor/template.mustache
