@@ -14,4 +14,3 @@ subscriptions:
     pull_request: 
       title: "{{title}}"
       description: .expeditor/template.mustache
-      branch: "{{event}}:{{name}}/"
