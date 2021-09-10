@@ -5,7 +5,6 @@ slack:
   notify_channel:
     - expeditor-testing
 
-
 subscriptions:
   - workload: pull_request_merged:{{github_repo}}:{{release_branch}}:*
     actions:
@@ -14,3 +13,8 @@ subscriptions:
     pull_request: 
       title: "{{title}}"
       description: .expeditor/template.mustache
+  - workload: pull_request_opened:{{github_repo}}:{{release_branch}}:*
+    actions:
+      - bash:.expeditor/noop.sh
+          ignore_labels:
+            - "Custom Label"
