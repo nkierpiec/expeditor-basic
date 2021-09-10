@@ -15,6 +15,6 @@ subscriptions:
       description: .expeditor/template.mustache
   - workload: pull_request_opened:{{github_repo}}:{{release_branch}}:*
     actions:
-      - bash:.expeditor/noop.sh
+      - bash:.expeditor/noop.sh:
           ignore_labels:
             - "Custom Label"
