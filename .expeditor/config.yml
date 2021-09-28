@@ -17,6 +17,6 @@ subscriptions:
   - workload: pull_request_opened:{{github_repo}}:{{release_branch}}:*
     actions: .expeditor/
       - bash:.expeditor/noop.sh:
-          cwd: 
+          cwd: .expeditor/
           ignore_labels:
             - "Custom Label"
