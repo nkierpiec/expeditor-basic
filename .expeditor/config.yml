@@ -15,7 +15,7 @@ subscriptions:
       title: "{{title}}"
       description: .expeditor/template.mustache
   - workload: pull_request_opened:{{github_repo}}:{{release_branch}}:*
-    actions: .expeditor/
+    actions:
       - bash:.expeditor/noop.sh:
           cwd: .expeditor/
           ignore_labels:
