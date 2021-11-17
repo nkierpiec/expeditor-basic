@@ -1,7 +1,6 @@
 release_branches:
   - main
-  
-  
+ 
 slack:
   notify_channel:
     - expeditor-testing
